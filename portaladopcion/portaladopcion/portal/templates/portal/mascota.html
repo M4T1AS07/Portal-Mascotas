@@ -1,0 +1,38 @@
+{% extends "portal/base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Mascotas disponibles para adopción</h2>
+
+<!-- Formulario de filtros -->
+<form method="get" class="row g-3 mb-4">
+    <div class="col-md-4">
+        <input type="text" name="especie" placeholder="Especie" class="form-control" value="{{ request.GET.especie }}">
+    </div>
+    <div class="col-md-4">
+        <input type="number" name="edad" placeholder="Edad" class="form-control" value="{{ request.GET.edad }}">
+    </div>
+    <div class="col-md-4">
+        <input type="text" name="ubicacion" placeholder="Ubicación" class="form-control" value="{{ request.GET.ubicacion }}">
+    </div>
+    <div class="col-12 text-end">
+        <button type="submit" class="btn btn-success">Filtrar</button>
+    </div>
+</form>
+
+<div class="row">
+    {% for mascota in mascotas %}
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <img src="{{ mascota.imagen.url }}" class="card-img-top" alt="{{ mascota.nombre }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ mascota.nombre }}</h5>
+                <p class="card-text"><strong>Edad:</strong> {{ mascota.edad }} años<br><strong>Ubicación:</strong> {{ mascota.ubicacion }} <br> {{ mascota.descripcion|truncatewords:15 }}</p>
+                <a href="{% url 'solicitar_adopcion' mascota.id %}" class="btn btn-primary">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>No hay mascotas que coincidan con tu búsqueda.</p>
+    {% endfor %}
+</div>
+{% endblock %}
