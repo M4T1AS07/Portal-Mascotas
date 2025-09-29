@@ -1,0 +1,67 @@
+[
+{
+  "model": "portal.mascota",
+  "pk": 1,
+  "fields": {
+    "nombre": "Rufus",
+    "especie": "Poodle",
+    "edad": 1,
+    "ubicacion": "ñuñoa",
+    "descripcion": "En adopción",
+    "disponible": true,
+    "imagen": "mascotas/toma-primer-plano-vertical-lindo-cachorro-caniche-blanco-textil-beige_181624-29296.jpg"
+  }
+},
+{
+  "model": "portal.mascota",
+  "pk": 18,
+  "fields": {
+    "nombre": "Chinchi",
+    "especie": "Otro",
+    "edad": 2,
+    "ubicacion": "Olmué",
+    "descripcion": "En adopción",
+    "disponible": true,
+    "imagen": "mascotas/Chinchi Conejo.jpg"
+  }
+},
+{
+  "model": "portal.mascota",
+  "pk": 19,
+  "fields": {
+    "nombre": "Luna",
+    "especie": "Gato",
+    "edad": 1,
+    "ubicacion": "La Reina",
+    "descripcion": "En adopción",
+    "disponible": true,
+    "imagen": "mascotas/Luna Gato.png"
+  }
+},
+{
+  "model": "portal.mascota",
+  "pk": 20,
+  "fields": {
+    "nombre": "Ryan",
+    "especie": "Perro",
+    "edad": 1,
+    "ubicacion": "Las Condes",
+    "descripcion": "En adopción",
+    "disponible": true,
+    "imagen": "mascotas/Ryan Husky.jpeg"
+  }
+},
+{
+  "model": "portal.mascota",
+  "pk": 21,
+  "fields": {
+    "nombre": "Simba",
+    "especie": "Gato",
+    "edad": 2,
+    "ubicacion": "Providencia",
+    "descripcion": "En adopción",
+    "disponible": true,
+    "imagen": "mascotas/Simba Gato.jpg"
+  }
+}
+]
