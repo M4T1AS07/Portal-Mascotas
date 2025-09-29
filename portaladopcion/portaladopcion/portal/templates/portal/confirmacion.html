@@ -1,9 +1,0 @@
-{% extends "portal/base.html" %}
-
-{% block content %}
-<div class="alert alert-success text-center">
-    <h3>¡Solicitud enviada con éxito! 🎉</h3>
-    <p>Tu solicitud para adoptar a <strong>{{ mascota.nombre }}</strong> fue registrada correctamente.</p>
-    <a href="{% url 'home' %}" class="btn btn-primary">Volver al inicio</a>
-</div>
-{% endblock %}
