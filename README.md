@@ -72,3 +72,5 @@ Python manage.py createsuperuser
 http://127.0.0.1:8000/admin/
 
 Con esto ya deberías poder ejecutar y usar el Portal de Adopción de Mascotas fácilmente.
+
+Grupo: Renato Briones, Roberto Rengifo, Matias Paredes 
